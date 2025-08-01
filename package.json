@@ -6,12 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-pageflip": "^1.0.11",
-    "framer-motion": "^6.0.0",
-    "lucide-react": "^0.267.0",
-    "react-scripts": "^5.0.1"
-  }
+ "dependencies": {
+  "react": "^17.0.2",
+  "react-dom": "^17.0.2",
+  "react-scripts": "^5.0.1"
 }
