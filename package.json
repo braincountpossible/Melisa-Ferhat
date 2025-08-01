@@ -12,5 +12,6 @@
     "react-pageflip": "^1.0.11",
     "framer-motion": "^6.0.0",
     "lucide-react": "^0.267.0"
+     "react-scripts": "^5.0.1"
   }
 }
