@@ -13,7 +13,8 @@
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.1",
     "react-pageflip": "^1.0.12",
-    "framer-motion": "^6.6.5"
+    "lucide-react": "^0.267.0",
+    "framer-motion": "^6.0.0"
   },
   "browserslist": {
     "production": [
