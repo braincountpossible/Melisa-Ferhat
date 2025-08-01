@@ -1,10 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import SozDefteri from "./SozDefteri";
+import ReactDOM from "react-dom/client";
+import SozDefteri from "./SozDefteri.jsx";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <SozDefteri />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<SozDefteri />);
