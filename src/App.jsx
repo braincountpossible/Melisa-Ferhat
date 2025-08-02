@@ -1,28 +1,17 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CoverPage from "./CoverPage";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from "./Menu";
-import Home from "./pages/Home";
-import Gallery from "./pages/Gallery";
-import Wishes from "./pages/Wishes";
-import Advice from "./pages/Advice";
+import SozDefteri from "./SozDefteri";
 
 export default function App() {
-  const [showCover, setShowCover] = useState(true);
-
-  if (showCover) {
-    return <CoverPage onOpen={() => setShowCover(false)} />;
-  }
-
   return (
     <Router>
       <Menu />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/wishes" element={<Wishes />} />
-        <Route path="/advice" element={<Advice />} />
-      </Routes>
+      <Switch>
+        <Route exact path="/" component={SozDefteri} />
+        {/* Можеш да добавиш още Route-и тук за други страници */}
+      </Switch>
     </Router>
   );
 }
+
