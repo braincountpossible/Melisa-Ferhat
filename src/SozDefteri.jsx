@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import CoverPage from "./CoverPage";
 
 export default function SozDefteri() {
+  const [showCover, setShowCover] = useState(true);
+
+  if (showCover) {
+    return <CoverPage onOpen={() => setShowCover(false)} />;
+  }
+
+  // Твоето красиво съдържание:
   return (
     <div style={{
       padding: "48px",
