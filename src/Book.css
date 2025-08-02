@@ -1,0 +1,56 @@
+.book {
+  width: 480px;
+  min-height: 340px;
+  margin: 60px auto;
+  background: #b0b988;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px #23371c70;
+  position: relative;
+  cursor: pointer;
+  transition: transform 1s cubic-bezier(.5,1.5,.5,1), box-shadow .7s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.book__cover {
+  text-align: center;
+  padding: 40px 32px 20px 32px;
+  color: #344d2e;
+}
+
+.book__subtitle {
+  color: #8d7b3a;
+  font-size: 1.2em;
+  margin-bottom: 24px;
+}
+
+.book__instruction {
+  margin-top: 30px;
+  color: #857d5f;
+  font-size: 1.1em;
+}
+
+.book--open {
+  transform: rotateY(180deg) scale(1.02);
+  background: #f9fbe7;
+  transition: transform 1.2s cubic-bezier(.25,2,.5,1), background 0.6s;
+  box-shadow: 0 8px 48px #364d2d88;
+}
+
+.book--open .book__cover {
+  display: none;
+}
+
+.book__pages, .book__content {
+  padding: 40px 40px 20px 40px;
+  color: #364d2d;
+  animation: page-flip 1.2s cubic-bezier(.33,1.6,.33,1) forwards;
+}
+
+@keyframes page-flip {
+  0% { opacity: 0; transform: rotateY(-100deg) scale(0.95);}
+  80% { opacity: 1; transform: rotateY(5deg) scale(1.03);}
+  100% { opacity: 1; transform: rotateY(0deg) scale(1);}
+}
