@@ -12,7 +12,7 @@ const CoverPage = ({ onOpen }) => (
     }}
   >
     <img
-      src="/cover.jpg"
+      src="/cover.png"
       alt="Kalpten Kalbe – Melisa & Ferhat’ın Söz Defteri"
       style={{ width: 400, borderRadius: 18, boxShadow: "0 8px 32px #4443" }}
     />
